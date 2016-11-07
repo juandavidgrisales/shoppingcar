@@ -1,5 +1,5 @@
 server:
- port: 8087
+ port: 8089
 
 # ===============================
 # = DATA SOURCE
@@ -12,9 +12,10 @@ spring:
    #url: jdbc:sqlserver://localhost:3305;databaseName=bd_2personnel;integratedSecurity=false;
    #driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
    # Connection url for the database MySQL
-   url: jdbc:mysql://localhost:3306/shoppingcar?useSSL=false
+   #url: jdbc:mysql://localhost:3306/shoppingcar?useSSL=false
+   url: jdbc:mysql://www.arotexconfecciones.com:3306/arotexco_shoppingcar
    # Username and password
-   username: root
+   username: arotexco_admin
    password: admin
    # Keep the connection alive if idle for a long time (needed in production)
    testWhileIdle: true
