@@ -13,7 +13,7 @@ spring:
    #driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
    # Connection url for the database MySQL
    #url: jdbc:mysql://localhost:3306/shoppingcar?useSSL=false
-   url: jdbc:mysql://www.arotexconfecciones.com:3306/arotexco_shoppingcar
+   url: jdbc:mysql://www.arotexconfecciones.com:3306/arotexco_shoppingcar?sslmode=require
    # Username and password
    username: arotexco_admin
    password: admin
