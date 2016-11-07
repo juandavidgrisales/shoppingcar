@@ -72,6 +72,12 @@ public class CompanyAPI {
                                         @RequestParam(value = "orden", required = false) String orden) throws NotFoundException {
         return companyService.getAll(index, size, direccion, orden);
     }
+    
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    public String test () throws NotFoundException {
+        return "Esto es una prueba";
+    }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
